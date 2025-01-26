@@ -1,0 +1,1 @@
+0 * * * * /home/agoodkind/openwrt-backups/backup.sh >> /home/agoodkind/openwrt-backups/logfile.log 2>&1
