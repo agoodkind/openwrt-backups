@@ -1,0 +1,33 @@
+
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config globals 'globals'
+	option ula_prefix 'fd21:89a3:6514::/48'
+	option packet_steering '1'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	list ports 'lan1'
+	list ports 'lan2'
+	list ports 'lan3'
+	list ports 'lan4'
+	list ports 'wan'
+	option acceptlocal '1'
+	option ipv6 '1'
+
+config interface 'lan'
+	option device 'br-lan'
+	option proto 'dhcp'
+
+config interface 'lan_6'
+	option proto 'dhcpv6'
+	option device 'br-lan'
+	option reqaddress 'try'
+	option reqprefix 'no'
+	option norelease '0'
+
