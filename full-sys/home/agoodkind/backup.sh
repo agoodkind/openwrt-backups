@@ -16,7 +16,7 @@ mkdir -p backup-expanded
 mv etc backup-expanded/etc
 
 mkdir -p full-sys
-PATHS_TO_COPY="/etc /usr /home"
+PATHS_TO_COPY="/etc /usr /home /root /www"
 for P in $PATHS_TO_COPY; do
 	echo "$(date -Iseconds) Copying $P"
 	cp -r $P /tmp/openwrt-backups/full-sys/
