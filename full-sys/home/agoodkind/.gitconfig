@@ -5,3 +5,5 @@
 [user]
 	email = agoodkind@linksys-rap
 	name = agoodkind@linksys-rap
+[safe]
+	directory = /tmp/openwrt-backups

@@ -8,7 +8,7 @@ mkdir -p /tmp/openwrt-backups
 cp -r /home/agoodkind/openwrt-backups/.git /tmp/openwrt-backups/
 cd /tmp/openwrt-backups
 
-git fetch --all && git checkout main && git pull
+git fetch --all --quiet && git checkout main --quiet && git pull --quiet
 
 sysupgrade -b backup.tar.gz
 tar xfz backup.tar.gz
