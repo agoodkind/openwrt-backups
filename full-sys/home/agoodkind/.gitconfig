@@ -1,0 +1,7 @@
+[core]
+	sshcommand = ssh -i /home/agoodkind/.ssh/id_ed25519
+[init]
+	defaultBranch = main
+[user]
+	email = agoodkind@linksys-rap
+	name = agoodkind@linksys-rap

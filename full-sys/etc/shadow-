@@ -1,0 +1,10 @@
+root:$1$qECxugPi$QPyYWyBzakP4Z0zx.HWex1:20014:0:99999:7:::
+daemon:*:0:0:99999:7:::
+ftp:*:0:0:99999:7:::
+network:*:0:0:99999:7:::
+nobody:*:0:0:99999:7:::
+ntp:x:0:0:99999:7:::
+dnsmasq:x:0:0:99999:7:::
+logd:x:0:0:99999:7:::
+ubus:x:0:0:99999:7:::
+agoodkind:$5$q0lvwuZ/MHPYOL2c$Pee20l2JpuTCkzyPwazULZMAj67M8zaUl0GmGZ2v.E7:20113::::::

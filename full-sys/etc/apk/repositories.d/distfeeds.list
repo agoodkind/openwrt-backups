@@ -1,0 +1,8 @@
+https://downloads.openwrt.org/snapshots/targets/mvebu/cortexa9/packages/packages.adb
+https://downloads.openwrt.org/snapshots/packages/arm_cortex-a9_vfpv3-d16/base/packages.adb
+https://downloads.openwrt.org/snapshots/targets/mvebu/cortexa9/kmods/6.6.73-1-c9995e736fcc7b0dcb8762102ae60283/packages.adb
+https://downloads.openwrt.org/snapshots/packages/arm_cortex-a9_vfpv3-d16/luci/packages.adb
+https://downloads.openwrt.org/snapshots/packages/arm_cortex-a9_vfpv3-d16/packages/packages.adb
+https://downloads.openwrt.org/snapshots/packages/arm_cortex-a9_vfpv3-d16/routing/packages.adb
+https://downloads.openwrt.org/snapshots/packages/arm_cortex-a9_vfpv3-d16/telephony/packages.adb
+https://downloads.openwrt.org/snapshots/packages/arm_cortex-a9_vfpv3-d16/video/packages.adb

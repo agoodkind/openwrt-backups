@@ -1,0 +1,111 @@
+{
+	"model": {
+		"id": "linksys,wrt1900acs",
+		"name": "Linksys WRT1900ACS"
+	},
+	"led": {
+		"wan": {
+			"name": "WAN",
+			"sysfs": "pca963x:shelby:white:wan",
+			"type": "netdev",
+			"device": "wan",
+			"mode": "link tx rx"
+		},
+		"usb1": {
+			"name": "USB 1",
+			"sysfs": "pca963x:shelby:white:usb2",
+			"type": "usbport",
+			"ports": [
+				"usb1-port1"
+			]
+		},
+		"usb2": {
+			"name": "USB 2",
+			"sysfs": "pca963x:shelby:white:usb3_1",
+			"type": "usbport",
+			"ports": [
+				"usb2-port1",
+				"usb3-port1"
+			]
+		},
+		"usb2_ss": {
+			"name": "USB 2 SS",
+			"sysfs": "pca963x:shelby:white:usb3_2",
+			"type": "usbport",
+			"ports": [
+				"usb3-port1"
+			]
+		}
+	},
+	"network": {
+		"lan": {
+			"ports": [
+				"lan1",
+				"lan2",
+				"lan3",
+				"lan4"
+			],
+			"protocol": "static"
+		},
+		"wan": {
+			"device": "wan",
+			"protocol": "dhcp",
+			"macaddr": "c2:56:27:c7:c2:e6"
+		}
+	},
+	"system": {
+		"label_macaddr": "c0:56:27:c7:c2:e6",
+		"compat_version": "1.1"
+	},
+	"wlan": {
+		"phy0": {
+			"path": "soc/soc:pcie/pci0000:00/0000:00:01.0/0000:01:00.0",
+			"info": {
+				"antenna_rx": 4,
+				"antenna_tx": 4,
+				"bands": {
+					"5G": {
+						"ht": true,
+						"vht": true,
+						"max_width": 80,
+						"modes": [
+							"NOHT",
+							"HT20",
+							"VHT20",
+							"HT40",
+							"VHT40",
+							"VHT80"
+						],
+						"default_channel": 36
+					}
+				},
+				"radios": [
+				]
+			}
+		},
+		"phy1": {
+			"path": "soc/soc:pcie/pci0000:00/0000:00:02.0/0000:02:00.0",
+			"info": {
+				"antenna_rx": 4,
+				"antenna_tx": 4,
+				"bands": {
+					"2G": {
+						"ht": true,
+						"vht": true,
+						"max_width": 80,
+						"modes": [
+							"NOHT",
+							"HT20",
+							"VHT20",
+							"HT40",
+							"VHT40"
+						],
+						"default_channel": 1
+					}
+				},
+				"radios": [
+				]
+			}
+		}
+	}
+}
