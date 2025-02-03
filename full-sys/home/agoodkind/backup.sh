@@ -1,14 +1,15 @@
 #!/bin/sh
 
+set -e 1
+set -x
+
 echo "$(date -Iseconds) Starting..."
 
 rm -rf /tmp/openwrt-backups
-mkdir -p /tmp/openwrt-backups
+cd /tmp
 
-cp -r /home/agoodkind/openwrt-backups/.git /tmp/openwrt-backups/
-cd /tmp/openwrt-backups
-
-git fetch --all --quiet && git checkout main --quiet && git pull --quiet
+git clone --depth=1 git@github.com:agoodkind/openwrt-backups.git --quiet
+cd openwrt-backups
 
 sysupgrade -b backup.tar.gz
 tar xfz backup.tar.gz
