@@ -73,9 +73,6 @@ procd
 procd-seccomp
 procd-ujail
 rsync
-shadow-groupadd
-shadow-useradd
-shadow-usermod
 sudo
 ubi-utils
 uboot-envtools

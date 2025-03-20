@@ -8,7 +8,7 @@ echo "$(date -Iseconds) Starting..."
 rm -rf /tmp/openwrt-backups
 cd /tmp
 
-git clone --depth=1 git@github.com:agoodkind/openwrt-backups.git --quiet
+git clone --depth=1 git@github.com:agoodkind/openwrt-backups.git
 cd openwrt-backups
 
 sysupgrade -b backup.tar.gz
@@ -32,7 +32,7 @@ CHANGES_DETECTED=0
 # Check each file for changes
 for F in $FILES; do
 	echo "$(date -Iseconds) Checking $F"
-	git diff --quiet "$F"
+	git diff "$F"
 	if [ $? -ne 0 ]; then
 		echo "$(date -Iseconds) Changes detected in $F"
 		CHANGES_DETECTED=1
@@ -43,7 +43,7 @@ done
 if [ $CHANGES_DETECTED -eq 1 ]; then
 	echo "$(date -Iseconds) At least one file has changes. Pushing to git."
 	git commit -a -m "Update for $(date)"
-	git push --quiet
+	git push
 else
 	echo "$(date -Iseconds) No changes detected in any file."
 fi

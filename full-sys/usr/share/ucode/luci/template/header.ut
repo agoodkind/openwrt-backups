@@ -7,7 +7,7 @@
 	include(`themes/${theme}/header`);
 -%}
 
-<script src="{{ resource }}/luci.js?v=25.024.18600~2c7b18b"></script>
+<script src="{{ resource }}/luci.js?v=25.031.23543~9483713"></script>
 <script>
 	L = new LuCI({{ replace(`${ {
 		media          : media,
